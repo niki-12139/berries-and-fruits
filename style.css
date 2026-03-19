@@ -1,0 +1,23 @@
+/* Основной стиль */
+
+body{
+
+background:#f8f9fa;
+
+}
+
+/* Карточки */
+
+.card{
+
+margin-top:20px;
+
+}
+
+/* Footer */
+
+footer{
+
+margin-top:50px;
+
+}
