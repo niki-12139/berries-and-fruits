@@ -1,195 +1,120 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-
-<!-- Кодировка -->
-<meta charset="UTF-8">
-
-<!-- Адаптив -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Название сайта -->
-<title>BerryGood</title>
-
-<!-- Bootstrap стили -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Свои стили -->
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BerryGood - Свежие фрукты и ягоды с доставкой</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="cssstyle.css" rel="stylesheet">
 </head>
-
 <body>
-
-<!-- Шапка сайта -->
-<header class="navbar navbar-expand-lg navbar-light bg-light">
-
-<div class="container">
-
-<!-- Логотип -->
-<a class="navbar-brand" href="index.html">
-
-BerryGood
-
-</a>
-
-<!-- Меню -->
-<ul class="navbar-nav">
-
-<li class="nav-item">
-
-<a class="nav-link" href="index.html">
-Главная
-</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="catalog.html">
-Каталог
-</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="order.html">
-Заказать
-</a>
-
-</li>
-
-</ul>
-
-</div>
-
-</header>
-
-<!-- Главный контент -->
-<main class="container mt-5">
-
-<!-- Главный баннер -->
-<section class="text-center">
-
-<h1>
-Свежие ягоды
-</h1>
-
-<p>
-Натуральные ягоды с фермы
-</p>
-
-<a href="catalog.html" class="btn btn-danger">
-
-Смотреть каталог
-
-</a>
-
-</section>
-
-<!-- Популярные товары -->
-<section class="row mt-5">
-
-<!-- Карточка товара -->
-<div class="col-md-4">
-
-<div class="card">
-
-<img src="https://via.placeholder.com/300">
-
-<div class="card-body">
-
-<h5>
-Клубника
-</h5>
-
-<p>
-10€/кг
-</p>
-
-<a href="product.html" class="btn btn-primary">
-Подробнее
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card">
-
-<img src="https://via.placeholder.com/300">
-
-<div class="card-body">
-
-<h5>
-Малина
-</h5>
-
-<p>
-12€/кг
-</p>
-
-<a href="product.html" class="btn btn-primary">
-Подробнее
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card">
-
-<img src="https://via.placeholder.com/300">
-
-<div class="card-body">
-
-<h5>
-Черника
-</h5>
-
-<p>
-15€/кг
-</p>
-
-<a href="product.html" class="btn btn-primary">
-Подробнее
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-</main>
-
-<!-- Подвал -->
-<footer class="bg-dark text-white text-center p-3 mt-5">
-
-<!-- Копирайт -->
-<p>
-
-© 2026 BerryGood
-
-</p>
-
-</footer>
-
-<!-- JS -->
-<script src="js/script.js"></script>
-
+    
+    <!-- ШАПКА -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="logo.png" alt="BerryGood" height="40" class="me-2" onerror="this.style.display='none'">
+                    <span class="fw-bold text-danger">BerryGood</span>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="form.html">Заказать</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ГЛАВНЫЙ БЛОК (компактный) -->
+    <main>
+        <section class="hero-section py-5">
+            <div class="container py-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="display-5 fw-bold mb-3">Свежие фрукты и ягоды</h1>
+                        <p class="lead mb-4">Откройте для себя природную сладость. Свежесобранные фрукты и ягоды с доставкой на дом.</p>
+                        <div class="d-flex gap-3">
+                            <a href="catalog.html" class="btn btn-danger btn-lg">В каталог</a>
+                            <a href="form.html" class="btn btn-outline-danger btn-lg">Заказать корзину</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=600" 
+                             alt="Свежие ягоды" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Почему выбирают нас</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 text-center p-4">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3">100% Органические</h4>
+                                <p class="card-text text-muted">Поставляем продукцию напрямую с органических ферм.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 text-center p-4">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3">Быстрая доставка</h4>
+                                <p class="card-text text-muted">Закажите сегодня и получите уже завтра.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 text-center p-4">
+                            <div class="card-body">
+                                <h4 class="card-title mb-3">Гарантия свежести</h4>
+                                <p class="card-text text-muted">Вернем деньги, если ягода не понравится.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- НИЖНЯЯ ТЁМКА -->
+    <footer class="site-footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                        <img src="logo.png" alt="BerryGood" height="30" class="me-2" onerror="this.style.display='none'">
+                        <span class="h5 mb-0 text-danger">BerryGood</span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-white me-3 text-decoration-none">Facebook</a>
+                    <a href="#" class="text-white me-3 text-decoration-none">Twitter</a>
+                    <a href="#" class="text-white text-decoration-none">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>

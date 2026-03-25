@@ -1,0 +1,60 @@
+/* ===== ОСНОВНЫЕ СТИЛИ BERRYGOOD ===== */
+
+/* Шапка */
+.site-header {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Главный баннер с фоном */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=1200');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+/* Карточки товаров */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Кнопки */
+.btn-danger {
+    background-color: #e63946;
+    border-color: #e63946;
+}
+
+.btn-danger:hover {
+    background-color: #d62839;
+    border-color: #d62839;
+}
+
+.btn-outline-danger {
+    color: #e63946;
+    border-color: #e63946;
+}
+
+.btn-outline-danger:hover {
+    background-color: #e63946;
+    border-color: #e63946;
+}
+
+/* Нижняя тёмка */
+.site-footer {
+    border-top: 3px solid #e63946;
+}
+
+/* Формы */
+.form-control:focus,
+.form-select:focus {
+    border-color: #e63946;
+    box-shadow: 0 0 0 0.2rem rgba(230, 57, 70, 0.25);
+}
